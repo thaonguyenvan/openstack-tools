@@ -432,7 +432,7 @@ openstack keypair create --public-key /root/.ssh/id_rsa.pub octavia_ssh_key
 
 Khởi tạo Security Group và Rule cho LB Network .
 
-````
+```
 openstack --os-region-name=RegionOne security group create lb-mgmt-sec-grp
 openstack --os-region-name=RegionOne security group rule create --protocol icmp lb-mgmt-sec-grp
 openstack --os-region-name=RegionOne security group rule create --protocol tcp --dst-port 22 lb-mgmt-sec-grp
